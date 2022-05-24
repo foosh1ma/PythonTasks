@@ -8,7 +8,7 @@ class Dessert:
             return True
         else:
             try:
-                return int(float(self.__calories)) < 200
+                return float(self.__calories) < 200
             except ValueError:
                 return False
 
